@@ -10,12 +10,10 @@ class MoviesBindings implements Bindings {
   @override
   void dependencies() {
     Get.lazyPut<GenresRepository>(
-      () => GenresRepositoryImpl(restClient: Get.find()),
-    );
+        () => GenresRepositoryImpl(restClient: Get.find()));
 
     Get.lazyPut<GenresService>(
-      () => GenresServiceImpl(genresRepository: Get.find()),
-    );
+        () => GenresServiceImpl(genresRepository: Get.find()));
 
     Get.lazyPut(() => MoviesController(
           genresService: Get.find(),

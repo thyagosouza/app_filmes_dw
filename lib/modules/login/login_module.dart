@@ -9,7 +9,7 @@ class LoginModule implements Module {
   List<GetPage> routers = [
     GetPage(
       name: '/login',
-      page: () => LoginPage(),
+      page: () => const LoginPage(),
       binding: LoginBindings(),
     ),
   ];
