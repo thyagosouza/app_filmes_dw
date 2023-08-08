@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "198504054106",
+    "project_id": "dart-week-app-filmes-fd421",
+    "storage_bucket": "dart-week-app-filmes-fd421.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198504054106:android:9b221d70e952553bdf4763",
+        "android_client_info": {
+          "package_name": "com.fujiapps.app_filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198504054106-316dsja8fqn567lvu16ittq5rvb2k3nr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fujiapps.app_filmes",
+            "certificate_hash": "3ce9586b9d958cb119e2c5abb2fd517c6f30a001"
+          }
+        },
+        {
+          "client_id": "198504054106-f0m4dcjer6f72ns9l1vl3rra1fu46k1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtaaezxI9wLdAAouOhTMS5V70VKg6Dals"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198504054106-bq9bko56h25vjo2q7838edbf83906k0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
