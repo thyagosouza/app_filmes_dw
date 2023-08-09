@@ -1,12 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../models/movie_model.dart';
 import '../my_flutter_app_icons.dart';
 
 class MovieCard extends StatelessWidget {
+  //final dateFormat = DateFormat('dd/MM/y');
+  final dateFormat = DateFormat('y');
   final MovieModel movie;
-  const MovieCard({
+  MovieCard({
     Key? key,
     required this.movie,
   }) : super(key: key);
@@ -39,9 +42,9 @@ class MovieCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 15),
-              const Text(
-                'headline6',
-                style: TextStyle(
+              Text(
+                movie.title,
+                style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
                   overflow: TextOverflow.ellipsis,
@@ -49,9 +52,9 @@ class MovieCard extends StatelessWidget {
                 maxLines: 2,
               ),
               const SizedBox(height: 5),
-              const Text(
-                'date',
-                style: TextStyle(
+              Text(
+                dateFormat.format(DateTime.parse(movie.releaseDate)),
+                style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w300,
                   color: Colors.grey,
@@ -60,7 +63,7 @@ class MovieCard extends StatelessWidget {
             ],
           ),
           Positioned(
-            bottom: 35,
+            bottom: 70,
             right: -10,
             child: Material(
               // borderRadius: BorderRadius.circular(50),

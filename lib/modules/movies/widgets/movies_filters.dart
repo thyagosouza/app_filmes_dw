@@ -17,11 +17,13 @@ class MoviesFilters extends GetView<MoviesController> {
           return Row(
             //* vai pegar a lista de objetos e transformar em um elemento
             children: controller.genres
-                .map((g) => FilterTag(
-                      model: g,
-                      onPressed: () {},
-                      selected: false,
-                    ))
+                .map(
+                  (g) => FilterTag(
+                    model: g,
+                    onPressed: () => controller.filterMoviesByGenre(g),
+                    selected: controller.genreSelected.value?.id == g.id,
+                  ),
+                )
                 .toList(),
           );
         }),

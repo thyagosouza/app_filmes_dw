@@ -35,7 +35,7 @@ class MoviesGroup extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 250,
+            height: 280,
             // width: Get.width,
             child: Obx(() {
               return ListView.builder(
